@@ -57,15 +57,27 @@ upDate.addEventListener("click", function(){
 })
 
 function UpdateDropout(){
-	//alert("num > 70%");
-	allStudent(allDate.filter(function(obj){
+	alert("num > 70%");
+	/*allStudent(allDate.filter(function(obj){
 		return (parseInt(obj.techPoint)+parseInt(obj.lifePoint))/2 >= 70;
 	}));
+	
+	allDate.filter(function(e) {
+    if (e[1] + e[2] >= 70) {
+        e[4] = "Frontend Dev";
+	}
+	});
+  allStudent(allDate);*/
+   
 }
 
+/*var filtro = allDate.filter(function(allDate){
+		return allDate.techPoint >= 70;
+	});
+	return filtro;
 
 
-/*function alumn(){
+function alumn(){
 	var allDate = [];
 	var s = [];
 	var l = [];

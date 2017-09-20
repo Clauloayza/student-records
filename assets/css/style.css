@@ -1,0 +1,19 @@
+.text{
+	font-size: 60px;
+	font-weight: 800;
+}
+button{
+	margin:15px;
+}
+.name{
+	text-transform: uppercase;
+	color: #13b94d;
+	font-weight: 800;
+	font-size: 35px;
+}
+.pto{
+	text-transform: lowercase;
+}
+#student{
+	margin: 30px 50px;	
+}

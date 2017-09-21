@@ -57,8 +57,18 @@ upDate.addEventListener("click", function(){
 })
 
 function UpdateDropout(){
-	alert("num > 70%");
-	/*allStudent(allDate.filter(function(obj){
+	//alert("num > 70%");
+	allDate = allDate.filter(function(allDate){
+        let letsgo = (allDate.techPoint + allDate.lifePoint)/2
+        return (letsgo >= 70);
+        
+    });
+    return allDate;
+   
+}
+
+
+/*allStudent(allDate.filter(function(obj){
 		return (parseInt(obj.techPoint)+parseInt(obj.lifePoint))/2 >= 70;
 	}));
 	
@@ -68,44 +78,3 @@ function UpdateDropout(){
 	}
 	});
   allStudent(allDate);*/
-   
-}
-
-/*var filtro = allDate.filter(function(allDate){
-		return allDate.techPoint >= 70;
-	});
-	return filtro;
-
-
-function alumn(){
-	var allDate = [];
-	var s = [];
-	var l = [];
-	var cont = "";
-	
-	for( var i=0; i<name; i++){
-		for(var j=0; j<techPoint; j++){
-			for(var k=0; k<lifePoint; k++){
-				var name = prompt("Nombre:","");
-				var techPoint = prompt("Porcentaje técnico:","");
-				var lifePoint = prompt("Porcentaje Hablidad Socio-Emocional","");
-				
-				allDate[i] = name;
-				s[j] = techPoint;
-				l[k] = lifePoint;
-			}
-		}
-	}
-	
-	for( var i=0; i<name; i++){
-		for(var j=0; j<techPoint; j++){
-			for(var k=0; k<lifePoint; k++){
-				cont += allDate[i] + " ";
-				cont += s[j] + " ";
-				cont += l[k] + " ";
-			}
-		}
-	}
-	document.getElementById("student").innerHTML = cont;
-}*/
-
